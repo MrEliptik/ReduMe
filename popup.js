@@ -1,5 +1,4 @@
 const input = document.getElementById('url-field');
-const text = document.querySelector('.wrap')
 
 document.addEventListener('paste', (e) => {
     readClipboard(e);
@@ -26,9 +25,6 @@ function readClipboard(e){
         input.style.border = '1px solid #8ecc5b';
         document.getElementById('text').textContent = "Short URL copied to clipboard!"
         //text.textContent = "Short URL successfully copied to clipboard !"
-    }
-    else{
-
     }
 }
 
@@ -66,7 +62,6 @@ function copyToClipboard(what) {
 
 function sendURL(urls_JSON) {
     const req_domain = "http://redu.me";
-    const port = "8081";
 
     /* Create and send request */
     request = new XMLHttpRequest();
